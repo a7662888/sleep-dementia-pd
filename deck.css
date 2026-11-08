@@ -584,3 +584,11 @@ body.k-reflow .k-cover{display:flex;flex-direction:column}
 body.k-reflow .k-cover .k-cover-art{position:relative;order:-1;width:calc(100% + 68px);max-width:none;height:300px;margin:-50px -34px 34px;right:auto;top:auto;overflow:hidden}
 body.k-reflow .k-cover .k-cover-copy,body.k-reflow .k-cover .k-cover-meta{position:static;width:auto!important}
 body.k-reflow.k-land .k-cover .k-cover-art{height:240px}
+/* 直放：寬表格每列一張卡（deck.js labelTables 加 .k-rtable 與欄名 .k-rlab） */
+.k-rlab{display:none}
+body.k-reflow.k-port table.k-rtable,body.k-reflow.k-port table.k-rtable tbody,body.k-reflow.k-port table.k-rtable tr,
+body.k-reflow.k-port table.k-rtable td,body.k-reflow.k-port table.k-rtable th{display:block;width:auto!important;max-width:none}
+body.k-reflow.k-port table.k-rtable thead,body.k-reflow.k-port table.k-rtable tr.k-rhead{display:none}
+body.k-reflow.k-port table.k-rtable tr{margin:0 0 14px;padding:10px 14px;border:1.5px solid #D9E0E7;border-radius:10px}
+body.k-reflow.k-port table.k-rtable td,body.k-reflow.k-port table.k-rtable th{border:0!important;padding:4px 0!important;text-align:left!important;height:auto!important}
+body.k-reflow.k-port table.k-rtable .k-rlab{display:block;font-size:24px;font-weight:700;color:#5B6B7C;margin-bottom:2px}
